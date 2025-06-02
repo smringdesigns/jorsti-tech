@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "Cómo crear un sitio web profesional",
+    "fecha": "2025-05-15",
+    "resumen": "Aprende los pasos clave para crear una página web desde cero con herramientas modernas.",
+    "imagen": "https://via.placeholder.com/600x300?text=Web+Profesional"
+  },
+  {
+    "titulo": "Ventajas del diseño responsive",
+    "fecha": "2025-05-18",
+    "resumen": "El diseño adaptable mejora la experiencia del usuario en móviles y aumenta la conversión.",
+    "imagen": "https://via.placeholder.com/600x300?text=Responsive"
+  },
+  {
+    "titulo": "Optimización SEO para principiantes",
+    "fecha": "2025-05-20",
+    "resumen": "Conoce los fundamentos del SEO y cómo aplicarlos en tu sitio para atraer visitas.",
+    "imagen": "https://via.placeholder.com/600x300?text=SEO"
+  }
+]
