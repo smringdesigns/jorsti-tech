@@ -79,104 +79,142 @@
 </header>
 <!-- End Header -->
 
-
-    <!-- Contact Section -->
-    <section class="contact" id="contacto">
-        <div class="container">
-            <div class="section-header">
-                <h3>Contáctanos</h3>
-                <p>Estamos listos para discutir tu proyecto y ofrecerte las mejores soluciones.</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div>
-                        <h4>Dirección</h4>
-                        <p>Valledupar, Colombia</p>
-                    </div>
-                    <div>
-                        <h4>E-mail</h4>
-                        <p>jorstitech@gmail.com</p>
-                        <p>administrador@inversionesjorsti.com</p>
-                    </div>
-                    <div>
-                        <h4>Teléfono</h4>
-                        <p>+57-300-876-5301</p>
-                    </div>
-                    <div>
-                        <h4>Horario</h4>
-                        <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
-                        <p>Sabados: 9:00 AM - 2:00 PM</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Tu Nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Tu Email" required>
-                        </div>
-                        <div class="form-group full">
-                            <input type="text" name="subject" placeholder="Asunto">
-                        </div>
-                        <div class="form-group full">
-                            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-                        </div>
-                        <div class="form-group full">
-                            <button type="submit" class="btn">Enviar Mensaje</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<!-- Sección Contacto -->
+<section class="contact" id="contacto">
+    <div class="container">
+        <div class="section-header">
+            <h1>Formulario de Contacto</h1>
+            <p>Completa el siguiente formulario para ponerte en contacto con nosotros.</p>
         </div>
-    </section>
-    <!-- End Contact Section -->
+        <div class="contact-form2">
+            <form action="https://formsubmit.co/jorstitech@gmail.com" method="POST">
+                
+                <legend>Datos de contacto</legend>
+                        
+                <div class="">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h3>¿Listo para impulsar tu presencia digital?</h3>
-            <p>Contáctanos hoy mismo para una consulta gratuita.</p>
-            <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Celular:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" inputmode="tel" placeholder="3001234567" required>
+                </div>
+
+                <div>
+                    <label for="business">Tipo de Negocio:</label>
+                    <input type="text" id="business" name="business" required>
+                </div>
+
+                <div>
+                    <label for="message">Explícanos qué quieres hacer:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <!-- Campo honeypot para evitar spam -->
+                <input type="text" name="_honey" style="display:none">
+
+                <!-- Opciones para formsubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+                <div>
+                    <button class="btn" type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-     <!-- Botón flotante de WhatsApp -->
+<!-- Sección Comentarios / Testimonios -->
+<section class="testimonials py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+    <div class="row justify-content-center g-4">
+      <!-- Comentario 1 -->
+      <div class="col-md-4">
+        <div class="card testimonial-card p-3 h-100">
+          <div class="card-body">
+            <p class="card-text">"JorSti Tech transformó nuestro sitio web y aumentó notablemente nuestras ventas online. ¡Recomendados!"</p>
+            <h5 class="card-title mt-4 mb-0">María López</h5>
+            <small class="text-muted">CEO, Tienda Online ABC</small>
+          </div>
+        </div>
+      </div>
+      <!-- Comentario 2 -->
+      <div class="col-md-4">
+        <div class="card testimonial-card p-3 h-100">
+          <div class="card-body">
+            <p class="card-text">"Excelente atención y resultados rápidos. Nuestro negocio tiene ahora una presencia digital profesional."</p>
+            <h5 class="card-title mt-4 mb-0">Carlos Martínez</h5>
+            <small class="text-muted">Fundador, Café Central</small>
+          </div>
+        </div>
+      </div>
+      <!-- Comentario 3 -->
+      <div class="col-md-4">
+        <div class="card testimonial-card p-3 h-100">
+          <div class="card-body">
+            <p class="card-text">"Muy satisfechos con el diseño responsivo y el soporte continuo. Gran equipo y profesionales."</p>
+            <h5 class="card-title mt-4 mb-0">Ana Gómez</h5>
+            <small class="text-muted">Gerente, Clínica SaludPlus</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <h3>¿Listo para impulsar tu presencia digital?</h3>
+        <p>Contáctanos hoy mismo para una consulta gratuita.</p>
+        <a href="contact.html" class="btn">Solicitar Presupuesto</a>
+    </div>
+</section>
+
+ <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/573008765301" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Escríbenos por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>JorSti Tech</h4>
-                    <p>Desarrollo web profesional para todas las pantallas. Conectamos tu negocio con más clientes a través de soluciones digitales efectivas.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul class="footer-links">
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>JorSti Tech</h4>
+                <p>Desarrollo web profesional para todas las pantallas. Conectamos tu negocio con más clientes a través de soluciones digitales efectivas.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="footer-links">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="services.html">Servicios</a></li>
                         <li><a href="process.html">Procesos</a></li>
                         <li><a href="contact.html">Contacto</a></li>
                         <li><a href="icetex.html">Icetex</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Servicios</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Sitios Web Responsivos</a></li>
-                        <li><a href="#">E-commerce</a></li>
-                        <li><a href="#">Optimización Móvil</a></li>
-                        <li><a href="#">SEO</a></li>
-                        <li><a href="#">Mantenimiento Web</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <!-- 🔗 Redes sociales -->
+            </div>
+            <div class="footer-section">
+                <h4>Servicios</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Sitios Web Responsivos</a></li>
+                    <li><a href="#">E-commerce</a></li>
+                    <li><a href="#">Optimización Móvil</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Mantenimiento Web</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <!-- 🔗 Redes sociales -->
                     <div class="social-links">
                         <!-- Facebook -->
                         <a href="https://facebook.com/jorstitech" target="_blank" rel="noopener noreferrer" title="Síguenos en Facebook">
@@ -198,17 +236,17 @@
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 JorSti Tech. Todos los derechos reservados.</p>
             </div>
         </div>
-    </footer>
-    <!-- End Footer -->
+        <div class="copyright">
+            <p>&copy; 2025 JorSti Tech. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
 
-    <!-- Scripts -->     
-    <script src="main.js"></script>
-    <!-- End Scripts -->
+<!-- Scripts -->
+<script src="main.js" defer></script>
+<!-- End Scripts -->
 </body>
 </html>

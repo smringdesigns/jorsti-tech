@@ -162,8 +162,8 @@ nav {
   display: flex;
   justify-content: space-between; /* Separar logo y enlaces */
   align-items: center;            /* Centrar verticalmente */
-  padding: 10px 20px;
-  position: relative;
+  padding: 10px;
+  position:relative;
 }
 
 nav ul {
@@ -172,7 +172,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 10px; /* Separación entre enlaces */
+  margin-left: 5px; /* Separación entre enlaces */
 }
 
 nav ul li a {
@@ -516,6 +516,30 @@ textarea {
 }
 
 /* ========================
+   Botón Flotante (WhatsApp)
+======================== */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  padding: 10px 16px;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+
+
+/* ========================
    FOOTER (Pie de página)
 ======================== */
 footer {
@@ -540,6 +564,7 @@ footer .container {
 
 /* Cada sección dentro del footer */
 .footer-section {
+  margin-bottom: 0;
   /* Puedes agregar más estilos aquí si quieres, ejemplo margen interno */
 }
 
