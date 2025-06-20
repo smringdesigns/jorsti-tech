@@ -515,6 +515,10 @@ textarea {
   resize: vertical;
 }
 
+.honey {
+  display: none;
+}
+
 /* ========================
    Botón Flotante (WhatsApp)
 ======================== */
