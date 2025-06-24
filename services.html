@@ -43,9 +43,11 @@
         
         <!-- Logo -->
         <div class="logo">
-            <h1 class="text-white m-0">JorSti<span class="text-warning">Tech</span></h1>
+            <a href="index.html">
+                <h1 class="text-white m-0">JorSti<span class="text-warning">Tech</span></h1>
+            </a>
         </div>
-
+        
         <!-- Menú hamburguesa (visible solo en móviles) -->
         <div class="mobile-menu d-lg-none text-white fs-3">
             &#9776;
@@ -79,44 +81,99 @@
 </header>
 <!-- End Header -->
 
-
-    <!-- Services Section -->
-    <section class="services" id="servicios">
-        <div class="container-services-content">
-            <div class="section-header">
-                <h4>Nuestros Servicios</h4>
-                <p>Ofrecemos soluciones web completas adaptadas a las necesidades específicas de tu negocio.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🖥️</div>
-                    <h4>Sitios Web Responsivos</h4>
-                    <p>Diseñamos sitios que se ven perfectos en cualquier dispositivo, desde computadoras de escritorio hasta smartphones.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛒</div>
-                    <h4>E-commerce</h4>
-                    <p>Crea tu tienda online con todas las herramientas necesarias para vender tus productos en internet.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h4>Optimización Móvil</h4>
-                    <p>Mejoramos la experiencia de usuario en dispositivos móviles para aumentar las conversiones.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔍</div>
-                    <h4>SEO</h4>
-                    <p>Mantenemos tu sitio actualizado, seguro y funcionando perfectamente en todo momento.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⚡</div>
-                    <h4>Optimización de Rendimiento</h4>
-                    <p>Mejoramos la velocidad y el rendimiento de tu sitio para ofrecer una experiencia óptima.</p>
-                </div>
-            </div>
+<!-- Services Section -->
+<section class="services" id="servicios">
+    <div class="container-services-content">
+        <div class="section-header">
+        <h3>Nuestros Servicios</h3>
+        <p>Ofrecemos soluciones digitales integrales adaptadas a las necesidades de tu negocio, proyecto o comunidad. Desde tecnología hasta asesorías y logística, todo desde una sola plataforma.</p>
         </div>
-    </section>
-    <!-- End Services Section -->
+
+        <div class="services-grid">
+        <div class="service-card" onclick="openModal('modal-web')">
+            <div class="service-icon">💻</div>
+            <h4>Desarrollo Web y Digital</h4>
+            <p>Diseño profesional para cualquier dispositivo.</p>
+        </div>
+
+        <div class="service-card" onclick="openModal('modal-icetex')">
+            <div class="service-icon">📚</div>
+            <h4>Asesorías ICETEX Personalizadas</h4>
+            <p>Te orientamos en cada paso</p>
+        </div>
+
+        <div class="service-card" onclick="openModal('modal-droop')">
+            <div class="service-icon">🚚</div>
+            <h4>Punto Droop Coordinadora</h4>
+            <p>Envíos nacionales con recogida gratis desde tu casa o negocio. </p>
+        </div>
+
+        <div class="service-card" onclick="openModal('modal-cb')">
+            <div class="service-icon">💳</div>
+            <h4>Corresponsalía Bancaria</h4>
+            <p>Puedes hacer retiros, consignaciones y pagos de facturas desde tu celular, sin depender de un banco tradicional.</p>
+        </div>
+    </div>
+</section>
+<!-- End Services Section -->
+
+    <!-- Modales -->
+    <div id="modal-web" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-web')">&times;</span>
+            <h2>🖥️ Sitios Web Responsivos</h2>
+            <p>Diseñamos sitios modernos y adaptables a cualquier dispositivo: computador, tablet o celular.</p>
+            <h2>🛒 E-commerce</h2>
+            <p>Creamos tu tienda online con pasarelas de pago, control de productos y funciones personalizadas.</p>
+            <h2>📱 Optimización Móvil</h2>
+            <p>Mejoramos la experiencia en móviles para garantizar velocidad, accesibilidad y resultados.</p>
+            <h2>🔍 SEO</h2>
+            <p>Posicionamos tu web en buscadores para atraer más visitas y clientes potenciales.</p>
+            <h2>⚡ Optimización de Rendimiento</h2>
+            <p>Aceleramos tu sitio para que cargue rápido y funcione de forma estable.</p>
+        </div>
+    </div>
+
+    <div id="modal-icetex" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-icetex')">&times;</span>
+            <h2>🎓 Solicitudes y Créditos Nuevos</h2>
+            <p>Te guiamos paso a paso para acceder a fondos, líneas de crédito, y becas ICETEX.</p>
+            <h2>🔄 Renovaciones y Legalizaciones</h2>
+            <p>Acompañamiento para mantener tu crédito al día, sin complicaciones ni errores.</p>
+            <h2>🗂️ Fondos Especiales (Negritudes, Indígenas, Víctimas)</h2>
+            <p>Te asesoramos en convocatorias y requisitos específicos según tu perfil.</p>
+            <h2>📌 Soporte por WhatsApp</h2>
+            <p>Comunicación directa y confiable para resolver dudas al instante.</p>
+        </div>
+    </div>
+
+    <div id="modal-droop" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-droop')">&times;</span>
+            <h2>📦 Envíos nacionales e intermunicipales</h2>
+            <p>Gestionamos tus paquetes a cualquier parte del país desde Valledupar.</p>
+            <h2>🏠 Recogida gratuita en casa o negocio</h2>
+            <p>Solo pagas el flete, ideal para emprendedores, estudiantes y negocios.</p>
+            <h2>🔄 Recaudos y entregas rápidas</h2>
+            <p>Solución ágil para compras, pagos contraentrega y más.</p>
+        </div>
+    </div>
+
+    <div id="modal-cb" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-cb')">&times;</span>
+            <h2>💰 Consignaciones y Retiros</h2>
+            <p>Realiza transacciones sin ir al banco, directamente desde nuestra plataforma.</p>    
+            <h2>📄 Pago de Servicios Públicos y Facturas</h2>
+            <p>Pagos simplificados desde un solo punto físico o digital.</p>  
+            <h2>🔁 Recargas y transferencias</h2>
+            <p>Envía dinero y recarga celular o cuentas en segundos, sin complicaciones.</p>  
+            <h2>📲 Solución móvil en crecimiento</h2>
+            <p>Todo desde tu celular o nuestro punto autorizado.</p>  
+        </div>
+    </div>
+    <!-- End Modales -->
 
     <!-- CTA Section -->
     <section class="cta">
@@ -192,6 +249,8 @@
         </div>
     </footer>   
     <!-- Scripts -->     
+    <script src="modal.js"></script>
     <script src="main.js"></script>
+    
 </body>
 </html>

@@ -41,9 +41,11 @@
 <header class="bg-gradient-blue py-3 sticky-top">
     <div class="container d-flex justify-content-between align-items-center">
         
-        <!-- Logo -->
+       <!-- Logo -->
         <div class="logo">
-            <h1 class="text-white m-0">JorSti<span class="text-warning">Tech</span></h1>
+            <a href="index.html">
+                <h1 class="text-white m-0">JorSti<span class="text-warning">Tech</span></h1>
+            </a>
         </div>
 
         <!-- Menú hamburguesa (visible solo en móviles) -->
@@ -81,38 +83,87 @@
 
 
 <body>
-    <!-- Process Section -->
-    <section class="process" id="proceso">
-        <div class="container">
-            <div class="section-header">
-                <h3>Nuestro Proceso</h3>
-                <p>Trabajamos con un método comprobado que garantiza resultados de calidad.</p>
-            </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h4>Consulta</h4>
-                    <p>Conocemos tus necesidades y definimos objetivos claros.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h4>Diseño</h4>
-                    <p>Creamos prototipos y diseños adaptados a tu marca.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h4>Desarrollo</h4>
-                    <p>Programamos tu sitio con las tecnologías más avanzadas.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h4>Entrega</h4>
-                    <p>Lanzamos tu sitio y te capacitamos para gestionarlo.</p>
-                </div>
-            </div>
+<!-- Process Section con ventanas emergentes -->
+<section class="process" id="proceso">
+    <div class="container">
+        <div class="section-header">
+        <h3>Nuestro Proceso</h3>
+        <p>Trabajamos con un método comprobado que garantiza resultados de calidad para cada uno de nuestros servicios.</p>
         </div>
-    </section>
-    <!-- End Process Section -->
+
+        <div class="process-grid-modal">
+        <div class="process-card-modal" onclick="openModal('modal-consulta')">
+            <div class="step-number">1</div>
+            <h4>Consulta</h4>
+            <p>Analizamos tus necesidades para definir la mejor solución personalizada.</p>
+        </div>
+
+        <div class="process-card-modal" onclick="openModal('modal-diseno')">
+            <div class="step-number">2</div>
+            <h4>Diseño</h4>
+            <p>Diseñamos una ruta clara adaptada a tu servicio específico.</p>
+        </div>
+
+        <div class="process-card-modal" onclick="openModal('modal-desarrollo')">
+            <div class="step-number">3</div>
+            <h4>Ejecución</h4>
+            <p>Ejecutamos el servicio con tecnología, asesoría o logística eficiente.</p>
+        </div>
+
+        <div class="process-card-modal" onclick="openModal('modal-entrega')">
+            <div class="step-number">4</div>
+            <h4>Entrega</h4>
+            <p>Entregamos con seguimiento, capacitación y soporte posventa.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modales -->
+<div id="modal-consulta" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-consulta')">&times;</span>
+        <h2>🟢 Consulta:</h2>
+        <p>Conocemos tus necesidades (tecnológicas, educativas, logísticas o financieras) y definimos objetivos claros para tu caso particular.</p>
+    </div>
+    </div>
+
+    <div id="modal-diseno" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-diseno')">&times;</span>
+        <h2>🎨 Diseñamos soluciones adaptadas:</h2>
+        <p>Para desarrollo web: prototipos visuales.</p>
+        <p>Para ICETEX: ruta personalizada según tu convocatoria.</p>
+        <p>Para mensajería: coordinación de envío/recolección.</p>
+        <p>Para corresponsalía: configuración de pagos o servicios.</p>
+    </div>
+    </div>
+
+    <div id="modal-desarrollo" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-desarrollo')">&times;</span>
+        <h2>💻 Aplicamos herramientas y plataformas adecuadas para:</h2>
+        <p>Programar tu sitio o tienda online.</p>
+        <p>Asesorarte en trámites ICETEX.</p>
+        <p>Procesar y gestionar envíos.</p>
+        <p>Realizar transacciones seguras en nuestra plataforma.</p>
+    </div>
+    </div>
+
+    <div id="modal-entrega" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-entrega')">&times;</span>
+        <h2>🚀 Te entregamos resultados funcionales, capacitando si es necesario, y te ofrecemos soporte o seguimiento según tu servicio:</h2>
+        <p>Web: gestión y mantenimiento.</p>
+        <p>ICETEX: acompañamiento hasta legalización.</p>
+        <p>Logística: seguimiento y solución de incidentes.</p>
+        <p>Corresponsalía: atención para recargas, retiros y más.</p>
+    </div>
+</div>
+<!-- End Modales -->
+
+
+
 
     <!-- CTA Section -->
     <section class="cta">
@@ -191,6 +242,7 @@
 
     <!-- Scripts -->     
     <script src="main.js"></script>
+    <script src="modal.js"></script>
     <!-- End Scripts -->
 </body>
 </html>

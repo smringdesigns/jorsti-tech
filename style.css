@@ -287,6 +287,41 @@ nav ul li a:hover {
   color: var(--color-primary);
 }
 
+/*Seccion Servicios modal*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: var(--color-white);
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.close {
+  color: #333;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* ========================
    PORTFOLIO (Sección de portafolio o trabajos)
 ======================== */
@@ -355,38 +390,33 @@ nav ul li a:hover {
   padding: 100px 0;
   background-color: var(--color-white);
 }
-
-.process-steps {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
+.process-grid-modal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding-top: 40px;
 }
 
-.process-step {
+.process-card-modal {
+  background-color: var(--color-gray);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  width: 200px;
-  position: relative;
 }
 
-/* Línea entre pasos, excepto el último */
-.process-step:not(:last-child)::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: var(--color-secondary);
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  z-index: -1;
+.process-card-modal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
-.step-number {
-  width: 80px;
-  height: 80px;
+.process-card-modal .step-number {
+  width: 60px;
+  height: 60px;
   background-color: var(--color-secondary);
   color: var(--color-white);
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
   border-radius: 50%;
   display: flex;
@@ -395,10 +425,7 @@ nav ul li a:hover {
   margin: 0 auto 20px;
 }
 
-.process-step h4 {
-  color: var(--color-primary);
-  margin-bottom: 10px;
-}
+
 
 /* ========================
    ABOUT (Sección sobre la empresa o persona)
