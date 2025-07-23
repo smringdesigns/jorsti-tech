@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cotización - JorSti Tech</title>
+<link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+  <div class="cotizacion">
+    <header>
+      <div class="logo">
+        <h1>JorSti<span>Tech</span></h1>
+      </div>
+      <div class="datos-empresa">
+        <p>NIT: <span contenteditable="true">1003313900-1</span></p>
+        <p><span contenteditable="true">jorstitech@gmail.com</span></p>
+        <p>Tel: <span contenteditable="true">300 876 5301</span></p>
+      </div>
+    </header>
+
+    <h2>COTIZACIÓN</h2>
+
+    <div class="info">
+      <div>
+        <strong>Cliente:</strong> <span contenteditable="true">Nombre del cliente</span><br>
+        <strong>Dirección:</strong> <span contenteditable="true">Dirección del cliente</span><br>
+        <strong>Contacto:</strong> <span contenteditable="true">Teléfono o correo</span>
+      </div>
+      <div>
+        <strong>Fecha:</strong> <span contenteditable="true">23/07/2025</span><br>
+        <strong>No. Cotización:</strong> <span contenteditable="true">JT-2025-001</span>
+      </div>
+    </div>
+
+    <table id="itemsTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Descripción</th>
+          <th>Cantidad</th>
+          <th>Valor Unitario</th>
+          <th>Subtotal</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas dinámicas aquí -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4"><strong>Total</strong></td>
+          <td colspan="2"><strong id="total">$0</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="add-item">
+      <input type="text" id="desc" placeholder="Descripción">
+      <input type="number" id="qty" placeholder="Cantidad">
+      <input type="number" id="price" placeholder="Valor Unitario">
+      <button class="btn" onclick="addItem()">Agregar Ítem</button>
+    </div>
+
+    <div class="observaciones">
+      <p contenteditable="true">✅ Cotización válida por 15 días.</p>
+      <p contenteditable="true">✅ Tiempo estimado de entrega: 4 semanas.</p>
+    </div>
+
+    <div class="print-button-container">
+      <button class="btn" onclick="window.print()">Imprimir cotización</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 JorSti Tech - Todos los derechos reservados</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
